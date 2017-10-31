@@ -33,8 +33,10 @@ end
 
 def add_s(array)
   array = array.collect do |x|
-    if x != array[2]
+    if x != array[1]
       x=x.insert(-1,"s")
+    else
+      x
     end
   end
 end
